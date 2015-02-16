@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		A121C4291A91B66000F4C8F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A121C4281A91B66000F4C8F6 /* main.m */; };
 		A121C42C1A91B66000F4C8F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A121C42B1A91B66000F4C8F6 /* AppDelegate.m */; };
-		A121C42F1A91B66000F4C8F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A121C42E1A91B66000F4C8F6 /* ViewController.m */; };
+		A121C42F1A91B66000F4C8F6 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A121C42E1A91B66000F4C8F6 /* ViewController.mm */; };
 		A121C4311A91B66000F4C8F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A121C4301A91B66000F4C8F6 /* Images.xcassets */; };
 		A121C4341A91B66000F4C8F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A121C4321A91B66000F4C8F6 /* LaunchScreen.xib */; };
 		A121C4401A91B66000F4C8F6 /* LevelDBForIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A121C43F1A91B66000F4C8F6 /* LevelDBForIOSTests.m */; };
+		A121C4591A91B67D00F4C8F6 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A121C4581A91B67D00F4C8F6 /* libleveldb.a */; };
+		A121C4601A91C20900F4C8F6 /* LevelDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = A121C45F1A91C20900F4C8F6 /* LevelDB.mm */; };
+		A121C46D1A91ECAC00F4C8F6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A121C46C1A91ECAC00F4C8F6 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +35,31 @@
 		A121C42A1A91B66000F4C8F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A121C42B1A91B66000F4C8F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A121C42D1A91B66000F4C8F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A121C42E1A91B66000F4C8F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A121C42E1A91B66000F4C8F6 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		A121C4301A91B66000F4C8F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A121C4331A91B66000F4C8F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A121C4391A91B66000F4C8F6 /* LevelDBForIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LevelDBForIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A121C43E1A91B66000F4C8F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A121C43F1A91B66000F4C8F6 /* LevelDBForIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelDBForIOSTests.m; sourceTree = "<group>"; };
+		A121C44A1A91B67100F4C8F6 /* c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c.h; sourceTree = "<group>"; };
+		A121C44B1A91B67100F4C8F6 /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		A121C44C1A91B67100F4C8F6 /* comparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comparator.h; sourceTree = "<group>"; };
+		A121C44D1A91B67100F4C8F6 /* db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = db.h; sourceTree = "<group>"; };
+		A121C44E1A91B67100F4C8F6 /* dumpfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dumpfile.h; sourceTree = "<group>"; };
+		A121C44F1A91B67100F4C8F6 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
+		A121C4501A91B67100F4C8F6 /* filter_policy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter_policy.h; sourceTree = "<group>"; };
+		A121C4511A91B67100F4C8F6 /* iterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		A121C4521A91B67100F4C8F6 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		A121C4531A91B67100F4C8F6 /* slice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slice.h; sourceTree = "<group>"; };
+		A121C4541A91B67100F4C8F6 /* status.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = status.h; sourceTree = "<group>"; };
+		A121C4551A91B67100F4C8F6 /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		A121C4561A91B67100F4C8F6 /* table_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_builder.h; sourceTree = "<group>"; };
+		A121C4571A91B67100F4C8F6 /* write_batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_batch.h; sourceTree = "<group>"; };
+		A121C4581A91B67D00F4C8F6 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
+		A121C45E1A91C20900F4C8F6 /* LevelDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelDB.h; sourceTree = "<group>"; };
+		A121C45F1A91C20900F4C8F6 /* LevelDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelDB.mm; sourceTree = "<group>"; };
+		A121C46B1A91ECAC00F4C8F6 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A121C46C1A91ECAC00F4C8F6 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A121C4591A91B67D00F4C8F6 /* libleveldb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +102,14 @@
 		A121C4251A91B66000F4C8F6 /* LevelDBForIOS */ = {
 			isa = PBXGroup;
 			children = (
+				A121C45D1A91C1F300F4C8F6 /* LevelDB_objc */,
+				A121C4491A91B67100F4C8F6 /* leveldb */,
 				A121C42A1A91B66000F4C8F6 /* AppDelegate.h */,
 				A121C42B1A91B66000F4C8F6 /* AppDelegate.m */,
 				A121C42D1A91B66000F4C8F6 /* ViewController.h */,
-				A121C42E1A91B66000F4C8F6 /* ViewController.m */,
+				A121C42E1A91B66000F4C8F6 /* ViewController.mm */,
+				A121C46B1A91ECAC00F4C8F6 /* Person.h */,
+				A121C46C1A91ECAC00F4C8F6 /* Person.m */,
 				A121C4301A91B66000F4C8F6 /* Images.xcassets */,
 				A121C4321A91B66000F4C8F6 /* LaunchScreen.xib */,
 				A121C4261A91B66000F4C8F6 /* Supporting Files */,
@@ -114,6 +141,37 @@
 				A121C43E1A91B66000F4C8F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A121C4491A91B67100F4C8F6 /* leveldb */ = {
+			isa = PBXGroup;
+			children = (
+				A121C4581A91B67D00F4C8F6 /* libleveldb.a */,
+				A121C44A1A91B67100F4C8F6 /* c.h */,
+				A121C44B1A91B67100F4C8F6 /* cache.h */,
+				A121C44C1A91B67100F4C8F6 /* comparator.h */,
+				A121C44D1A91B67100F4C8F6 /* db.h */,
+				A121C44E1A91B67100F4C8F6 /* dumpfile.h */,
+				A121C44F1A91B67100F4C8F6 /* env.h */,
+				A121C4501A91B67100F4C8F6 /* filter_policy.h */,
+				A121C4511A91B67100F4C8F6 /* iterator.h */,
+				A121C4521A91B67100F4C8F6 /* options.h */,
+				A121C4531A91B67100F4C8F6 /* slice.h */,
+				A121C4541A91B67100F4C8F6 /* status.h */,
+				A121C4551A91B67100F4C8F6 /* table.h */,
+				A121C4561A91B67100F4C8F6 /* table_builder.h */,
+				A121C4571A91B67100F4C8F6 /* write_batch.h */,
+			);
+			path = leveldb;
+			sourceTree = "<group>";
+		};
+		A121C45D1A91C1F300F4C8F6 /* LevelDB_objc */ = {
+			isa = PBXGroup;
+			children = (
+				A121C45E1A91C20900F4C8F6 /* LevelDB.h */,
+				A121C45F1A91C20900F4C8F6 /* LevelDB.mm */,
+			);
+			path = LevelDB_objc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A121C42F1A91B66000F4C8F6 /* ViewController.m in Sources */,
+				A121C46D1A91ECAC00F4C8F6 /* Person.m in Sources */,
+				A121C42F1A91B66000F4C8F6 /* ViewController.mm in Sources */,
 				A121C42C1A91B66000F4C8F6 /* AppDelegate.m in Sources */,
+				A121C4601A91C20900F4C8F6 /* LevelDB.mm in Sources */,
 				A121C4291A91B66000F4C8F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,8 +393,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LevelDBForIOS/",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = LevelDBForIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LevelDBForIOS/leveldb",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -343,8 +412,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LevelDBForIOS/",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
 				INFOPLIST_FILE = LevelDBForIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LevelDBForIOS/leveldb",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -402,6 +480,7 @@
 				A121C4451A91B66000F4C8F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A121C4461A91B66000F4C8F6 /* Build configuration list for PBXNativeTarget "LevelDBForIOSTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +489,7 @@
 				A121C4481A91B66000F4C8F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
